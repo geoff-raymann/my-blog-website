@@ -11,9 +11,10 @@
     {% else %}
         <h1>Share "{{ post.title }}" by e-mail</h1>
         <form action="post">
+            {{ field.errors }}
             {{ form.as_p }}
             {% csrf_token %}
             <input type="submit" value="Send e-mail">
         </form>
-    {% endif %}
+    {% endif %}     
 {% endblock %}
