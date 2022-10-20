@@ -5,6 +5,8 @@ from django.contrib.auth.models import User
 from traitlets import default
 from taggit.managers import TaggableManager
 
+
+
 # Create your models here.
 class PublishedManager(models.Manager):
     def get_queryset(self):
